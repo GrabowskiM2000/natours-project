@@ -11,6 +11,7 @@
 @import "/src/styles/components/composition";
 @import "/src/styles/components/feature-box";
 
+
 .header{
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)) ,url(/assets/images/hero.jpg);
@@ -107,7 +108,9 @@
 }
 
 .section-features{
-  padding: 20rem 0;
+  padding: 20rem 5rem;
   background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)) ,url(/assets/images/nat-4.jpg);
   background-size: cover;
+
+  display: flex;
 }
