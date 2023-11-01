@@ -10,6 +10,7 @@
 @import "/src/styles/components/button";
 @import "/src/styles/components/composition";
 @import "/src/styles/components/feature-box";
+@import "/src/styles/components/card";
 
 
 .header{
@@ -20,6 +21,7 @@
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box{
     position: absolute;
@@ -111,6 +113,21 @@
   padding: 20rem 5rem;
   background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)) ,url(/assets/images/nat-4.jpg);
   background-size: cover;
+  transform: skewY(-7deg);
+  margin: -7rem 0;
 
-  display: flex;
+  &-box{
+    display: flex;
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours{
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 50rem 0;
+
+  &-box{
+    display: flex;
+    justify-content: space-around;
+  }
 }
